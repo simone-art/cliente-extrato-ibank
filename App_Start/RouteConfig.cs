@@ -14,6 +14,12 @@ namespace ClienteIbank
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Extrato/id",
+                url: "extrato/{id}",
+                defaults: new { controller = "Home", action = "Get"}
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

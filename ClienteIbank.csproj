@@ -253,6 +253,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20200508220259_ExtratoCliente.cs" />
+    <Compile Include="Migrations\20200508220259_ExtratoCliente.designer.cs">
+      <DependentUpon>20200508220259_ExtratoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\DBContextModelSnapshot.cs" />
+    <Compile Include="Models\DBContext.cs" />
     <Compile Include="Models\ExtratoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
