@@ -16,7 +16,7 @@ namespace ClienteIbank.Controllers
         [Route ("api/extrato")]
         public IEnumerable<ExtratoCliente> Get()
         {
-            return ExtratoCliente.Busca();
+            return ExtratoCliente.Lista();
         }
 
         // GET api/values/5

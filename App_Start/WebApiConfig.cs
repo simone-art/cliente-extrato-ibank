@@ -15,8 +15,8 @@ namespace ClienteIbank
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "Extrato",
-                routeTemplate: "api/extrato/{id}",
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
