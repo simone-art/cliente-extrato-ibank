@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClienteIbank.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -11,12 +12,16 @@ namespace ClienteIbank.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        [HttpGet]
+        [Route ("api/extrato")]
+        public IEnumerable<ExtratoCliente> Get()
         {
-            return new string[] { "value1", "value2" };
+            return ExtratoCliente.Busca();
         }
 
         // GET api/values/5
+        [HttpGet]
+        [Route ("api/extrato/{id}")]
         public string Get(int id)
         {
             return "value";

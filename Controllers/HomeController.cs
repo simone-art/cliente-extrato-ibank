@@ -10,9 +10,13 @@ namespace ClienteIbank.Controllers
     [Route("api/[controller]")]
     public class HomeController : Controller
     {
+      
+
         [HttpGet]
         public ActionResult Index()
         {
+ 
+
             //var extratoCliente = new ExtratoCliente() { ContaCliente = 987654, SaldoConta = 10500, Descricao = "Transferência de Rs 500 feita por Simone Santos, N° Conta 123456" }.Salvar();
             //var extratoCliente2 = new ExtratoCliente() { ContaCliente = 987655, SaldoConta = 500, Descricao = "Transferência de Rs 500 feita por Manu Maia, N° Conta 456789" }.Salvar();
             //var extratoCliente3 = new ExtratoCliente() {ContaCliente = 987656, SaldoConta = 2000, Descricao = "Transferência de Rs 800 feita por Regina Pitanga, N° Conta 567342" }.Salvar();
