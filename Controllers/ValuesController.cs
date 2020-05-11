@@ -22,9 +22,10 @@ namespace ClienteIbank.Controllers
         // GET api/values/5
         [HttpGet]
         [Route ("api/extrato/{id}")]
-        public string Get(int id)
+        public ExtratoCliente Get(int id)
         {
-            return "value";
+            var extratocliente = ExtratoCliente.Busca().Where(e => e.Id == id).First();
+            return extratocliente;
         }
 
         // POST api/values
